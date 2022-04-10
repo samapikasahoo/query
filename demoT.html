@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#add").click(function () 
+  {       
+      $('.main').append($('.main > :first-child').clone());
+      
+      $('.main').append("<button class='rmv_btn' style='clear:both;background-color:black;color:white;font-size:large;'> &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp REMOVE ALL </button>");
+  
+  });                 
+  $('.main').on("click",".rmv_btn",function () 
+  {   $(this).prev('li').remove();
+       $(this).remove();
+  });
+  });
+  </script>
+
+<link rel="stylesheet" href="C:\figma.html\T.css">
+</head>
+<body>
+      
+    <div id="myDIV">
+      <p id="title">Task Management</p>
+      <form id="myForm" action="" method="post">
+        &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp    <textarea id="name" name="nom " placeholder="Title"autofocus ></textarea>
+      </form> 
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp<button id="add" style="clear:both">ADD NEW PRODUCTS</button>
+        <ul class="main" style="list-style-type:none;">
+        <li class="append_list">
+          <label></label> <input type="text" placeholder=" ✓ Go through datascript java tut   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp x"style="background-color: lightteal; ;width:90%;height:100%;">
+          <br>
+           <label></label> <input type="text" placeholder="practice the code &nbsp &nbsp   &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp x" style=" color:blue;background-color:lightcyan;width:90%;height:100%;">
+          <br>
+           <label></label> <input type="text" placeholder="✓ Organise my note   &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp   &nbsp   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp x" style="background-color:white;width:90%;height:100%;">
+          <br>
+           <label></label> <input type="text"placeholder="Create javascript project &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp x"style="background-color:teal;width:90%;height:100%;">
+          <br>
+          <label></label> <input type="text" placeholder="practice the code &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp x" style=" color:blue;background-color:lightcyan;width:90%;height:100%;">
+          <br>
+          <label></label> <input type="text" placeholder="✓ Take quiz &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp x" style=" color:blue;background-color:lightcyan;width:90%;height:100%;">
+        <br>
+        <label></label> <input type="text" placeholder="Comprehend interview question  &nbsp  &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp x" style=" color:blue;background-color:lightcyan;width:90%;height:100%;">
+        <br>
+        </li>
+
+      </ul>
+      </form> 
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
